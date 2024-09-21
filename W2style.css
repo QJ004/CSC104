@@ -1,0 +1,27 @@
+body{
+    /* This is where you apply the background color  */
+    background-color: rgb(232, 241, 247);
+     /* This is the text color just type in the word "color" to apply the color to the text */
+    color:purple ;
+   /* This is to change the font family */
+    font-family:Arial, Helvetica, sans-serif
+    /* Headers should be serif & body text should be san-serif */
+
+}
+h1{
+    /* Header (main)*/
+    color:rgb(55, 0, 255) ;
+    /* Make sure to use {} if not the functions won't appear */
+font-size:xx-large;
+}
+h2{
+    /* Subheader(Act. 1) */
+    color: darkcyan;
+}
+h3{
+    color: darkcyan;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
