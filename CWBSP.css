@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Using Poppins font */
+    background: linear-gradient(to bottom, #4b0082, #000000); /* Deep purple to black gradient */
+    color: #FFD700; /* Gold color for text */
+}
+
+/* Header styles */
+header {
+    display: flex; /* Flexbox for aligning items */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    background: rgba(255, 215, 0, 0.1); /* Light gold background with transparency */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+    animation: glowing 1.5s infinite alternate; /* Glow animation */
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex; /* Horizontal layout */
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #FFD700; /* Gold color for links */
+    transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+nav ul li a:hover {
+    color: #FFF; /* Change color on hover */
+}
+
+/* Search bar styles */
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.hero {
+    position: relative; /* Ensures positioned elements inside can be placed relative to this section */
+    overflow: hidden; /* Hides any overflow from the image */
+    height: 70vh; /* Adjust this value based on how tall you want the hero section */
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    color: white; /* Text color for visibility */
+}
+
+.hero-image {
+    position: absolute; /* Positioning the image absolutely within the hero section */
+    top: 50%; /* Start from the vertical center */
+    left: 50%; /* Start from the horizontal center */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 100%; /* Ensure it covers the height of the hero section */
+    min-width: 100%; /* Ensure it covers the width of the hero section */
+    transform: translate(-50%, -50%); /* Center the image */
+    object-fit: cover; /* Cover the container without stretching */
+    z-index: -1; /* Send the image to the back */
+}
+
+.hero-content {
+    position: relative; /* Ensure the text appears above the image */
+    z-index: 1; /* Bring content above the image */
+    text-align: center; /* Center the text */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #FFD700; /* Gold button */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.cta-button:hover {
+    background-color: #FFC107; /* Slightly darker gold on hover */
+}
+
+/* Content section styles */
+.content-section {
+    padding: 40px 20px;
+}
+
+.content-section h2 {
+    margin-bottom: 20px; /* Space below the section title */
+}
+
+.carousel {
+    display: flex; /* Horizontal layout for carousel */
+    overflow-x: auto; /* Scrollable */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.carousel-item {
+    min-width: 150px; /* Minimum width for items */
+    margin-right: 15px; /* Space between items */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    padding: 10px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.carousel-item img {
+    width: 100%; /* Make images responsive */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.carousel-item:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 20px;
+    background: rgba(255, 215, 0, 0.1); /* Light gold background with transparency */
+}
+
+/* Animation Keyframes */
+@keyframes glowing {
+    0% { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700; }
+    100% { text-shadow: 0 0 20px #FFFFFF, 0 0 30px #FFD700, 0 0 40px #FFD700; }
+}
