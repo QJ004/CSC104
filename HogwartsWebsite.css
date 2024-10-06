@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif; /* Use a simple font */
+    background-color: #f0f0f0; /* Light background color */
+    color: #333; /* Dark text color for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    background-color: #3e3e5a; /* Dark background for header */
+    color: white; /* White text color */
+    padding: 20px; /* Space around text */
+    text-align: center; /* Center-align text */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display items in a row */
+    margin: 0 10px; /* Space between items */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+h1, h2 {
+    color: #f9a602; /* Gold color for headings */
+}
+
+main {
+    padding: 20px; /* Space around main content */
+}
+
+section {
+    background-color: #fff; /* White background for sections */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between sections */
+    padding: 15px; /* Space inside sections */
+}
+
+button {
+    background-color: #f9a602; /* Gold background */
+    color: black; /* Black text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Space around button text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+button:hover {
+    background-color: #e6c200; /* Lighter gold on hover */
+}
+
+footer {
+    text-align: center; /* Center-align footer text */
+    padding: 10px; /* Space around footer */
+    background-color: #3e3e5a; /* Dark background for footer */
+    color: white; /* White text */
+}
