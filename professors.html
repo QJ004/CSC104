@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Professors</title>
+    <link rel="stylesheet" href="HogwartsWebsite.css">
+    <link rel="stylesheet" href="css/fullcalendar.min.css"> <!-- Link to FullCalendar CSS -->
+    <script src="js/jquery-3.6.0.min.js"></script> <!-- Link to jQuery -->
+    <script src="js/fullcalendar.min.js"></script> <!-- Link to FullCalendar JS -->
+</head>
+<body>
+    <header>
+        <h1>Meet Our Professors</h1>
+        <nav>
+            <ul>
+                <li><a href="HogwartsWebsite.html">Home</a></li>
+                <li><a href="professors.html">Professors</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="professors">
+            <div class="professor">
+                <h3>Professor McGonagall</h3>
+                <p><strong>Subject:</strong> Transfiguration</p>
+                <p><em>Bio:</em> Professor McGonagall is a highly skilled witch and the head of Gryffindor House.</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+
+            <div class="professor">
+                <h3>Professor Snape</h3>
+                <p><strong>Subject:</strong> Potions</p>
+                <p><em>Bio:</em> A master of Potions, Professor Snape is known for his strict teaching style.</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+
+            <!-- Add more professors here with placeholders -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hogwarts School of Witchcraft and Wizardry</p>
+    </footer>
+
+    <!-- The calendar modal -->
+    <div id="calendarModal" style="display: none;">
+        <div id="calendar"></div>
+        <button id="submit-date">Submit Date</button>
+        <button id="close-modal">Close</button>
+    </div>
+
+    <script src="hogwartsscripts.js"></script>
+</body>
+</html>

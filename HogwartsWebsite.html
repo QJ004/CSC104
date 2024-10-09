@@ -3,49 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Tutoring Services</title>
     <link rel="stylesheet" href="HogwartsWebsite.css">
-    <title>Hogwarts Tutoring Sign-Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts Link -->
 </head>
 <body>
     <header>
-        <h1>Hogwarts School of Witchcraft and Wizardry</h1>
-        <nav>
-            <ul>
-                <li><a href="#sign-up">Sign Up</a></li>
-                <li><a href="#professors">Professors</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Hogwarts School of Witchcraft and Wizardry</h1>
+        <div class="hero-image">
+            <img src="Hogwarts final project images/hogwarts_castle.gif.webp" alt="Hogwarts Castle" />
+        </div>
     </header>
-    <main>
-        <section id="sign-up">
-            <h2>Sign Up for Tutoring</h2>
-            <p>Need help with your studies? Sign up for tutoring sessions with our professors!</p>
-            <button>Start Here</button>
-        </section>
-        <section id="professors">
-            <h2>Meet Our Professors</h2>
-            <p>Our experienced professors are here to help you:</p>
-            <div>
-                <h3>Professor Snape</h3>
-                <p>Expert in Potions.</p>
+
+    <nav>
+        <ul>
+            <li><a href="HogwartsWebsite.html">Home</a></li>
+            <li><a href="professors.html">Professors</a></li> <!-- Link to professors.html -->
+            <li><a href="subjects.html">Subjects</a></li> <!-- Link to subjects.html -->
+            <li><a href="success.html">Success Stories</a></li> <!-- Placeholder for future success stories page -->
+        </ul>
+    </nav>
+
+    <!-- Professor Spotlight Section -->
+    <section class="professor-spotlight">
+        <h2>Professor Spotlight</h2>
+        <div class="professor-grid">
+            <div class="professor-card">
+                <img src="Hogwarts final project images/Minerva_McGonagall.gif.wbp.webp" alt="Professor McConagall" />
+                <h3>Minerva McGonagall</h3>
+                <p>Transfiguration</p>
+                <button class="details-button">More Details</button>
             </div>
-            <div>
-                <h3>Professor McGonagall</h3>
-                <p>Specializes in Transfiguration.</p>
+            <div class="professor-card">
+                <img src="Hogwarts final project images/Professor_Lockhart.gif.gif" alt="Professor Lockhart" />
+                <h3>Gilderoy Lockhart</h3>
+                <p>Defense Against The Dark Arts</p>
+                <button class="details-button">More Details</button>
             </div>
-            <div>
-                <h3>Professor Flitwick</h3>
-                <p>Charms Master.</p>
+            <div class="professor-card">
+                <img src="Hogwarts final project images/Profressor_snape.gif" alt="Professor Snape" />
+                <h3>Severus Snape</h3>
+                <p>Potions</p>
+                <button class="details-button">More Details</button>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email us at <a href="mailto:info@hogwartstutoring.com">info@hogwartstutoring.com</a>.</p>
-        </section>
-    </main>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Hogwarts School of Witchcraft and Wizardry</p>
     </footer>
+
+    <script src="hogwartsscripts.js"></script>
 </body>
 </html>

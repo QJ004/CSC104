@@ -1,65 +1,212 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif; /* Use a simple font */
-    background-color: #f0f0f0; /* Light background color */
-    color: #333; /* Dark text color for better readability */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    background-color: #1e1e1e; /* Dark background for the whole page */
+    color: #f5f5f5; /* Light text color */
+    font-family: 'Cormorant Garamond', serif; /* Change to Cormorant Garamond font */
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #3e3e5a; /* Dark background for header */
-    color: white; /* White text color */
-    padding: 20px; /* Space around text */
-    text-align: center; /* Center-align text */
+    position: relative; /* To allow positioning of content */
+    text-align: center;
+    padding: 20px; /* Add some padding */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for header */
+    border-radius: 15px; /* Rounded corners for header */
+    margin: 20px auto; /* Center the header */
+    max-width: 900px; /* Set a wider maximum width for the header */
+}
+
+.hero-image {
+    overflow: hidden; /* Prevent overflow of the image */
+}
+
+.hero-image img {
+    width: 100%; /* Make image fill the entire width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any space below the image */
+    max-height: 300px; /* Set a maximum height for the castle image */
+}
+
+h1 {
+    color: #ffd700; /* Gold color for visibility */
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    background-color: #444; /* Navigation background */
+    text-align: center; /* Centering the navigation */
+    margin: 20px auto; /* Center the navigation */
+    padding: 15px 0; /* Add some padding for visibility */
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Display items in a row */
-    margin: 0 10px; /* Space between items */
+    display: inline;
+    margin: 0 25px; /* Increased margin for spacing */
 }
 
-nav ul li a {
-    color: white; /* White text for links */
-    text-decoration: none; /* Remove underline from links */
+nav a {
+    color: #f5f5f5; /* Light text color for links */
+    text-decoration: none;
+    font-size: 1.2em; /* Increased font size for navigation */
 }
 
-h1, h2 {
-    color: #f9a602; /* Gold color for headings */
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
-main {
-    padding: 20px; /* Space around main content */
+.professor-spotlight,
+.success-stories,
+.features {
+    background-color: #2c2c2c; /* Dark background for sections */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px; /* Rounded corners for sections */
+    text-align: center; /* Center text in sections */
 }
 
-section {
-    background-color: #fff; /* White background for sections */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    margin-bottom: 20px; /* Space between sections */
-    padding: 15px; /* Space inside sections */
+h2 {
+    color: #ffd700; /* Gold color for headings */
+    font-size: 1.8em; /* Increased font size for uniform headings */
 }
 
-button {
-    background-color: #f9a602; /* Gold background */
-    color: black; /* Black text */
-    border: none; /* No border */
-    padding: 10px 15px; /* Space around button text */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to pointer */
+.professor-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-button:hover {
-    background-color: #e6c200; /* Lighter gold on hover */
+.professor-card,
+.story {
+    background-color: #3b3b3b; /* Darker background for cards */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 250px; /* Increased width for better layout */
+    display: inline-block; /* Allow centering of story cards */
 }
+
+.professor-card img,
+.story img {
+    max-width: 100%;
+    max-height: 150px; /* Set maximum height to fit the box */
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.details-button {
+    background-color: #ffd700; /* Gold button */
+    color: #1e1e1e; /* Dark text on button */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-button:hover {
+    background-color: #ffc107; /* Lighter gold on hover */
+}
+
+.success-stories {
+    font-size: 1.2em; /* Increased font size for stories */
+}
+
+.success-stories .story {
+    padding: 25px; /* More padding for stories */
+}
+
+.success-stories img {
+    max-height: 200px; /* Increased height for success story images */
+}
+.features h2 {
+    text-align: center;
+}
+
+.no-bullets {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;           /* Removes padding */
+    margin: 0;            /* Removes margin */
+}
+.features h2 {
+    font-size: 2.5em; /* Make the header bigger */
+    text-align: center; /* Center the header */
+}
+
+.features .student-quote {
+    text-align: center; /* Center the quote and GIF */
+    margin-top: 20px; /* Add some space above */
+}
+
+.features .student-quote img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.features p {
+    font-size: 1.2em; /* Make the text a bit larger */
+}
+
 
 footer {
-    text-align: center; /* Center-align footer text */
-    padding: 10px; /* Space around footer */
-    background-color: #3e3e5a; /* Dark background for footer */
-    color: white; /* White text */
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
 }
+a {
+    color: #FFD700; /* Change to a gold color for better visibility */
+    text-decoration: underline; /* Optional: underline the links for clarity */
+}
+
+a:hover {
+    color: #FFA500; /* Change to a brighter orange when hovered over */
+}
+.student-quote {
+    font-style: italic; /* Italicize the quote */
+    color: #555; /* Change the color for contrast */
+    margin-top: 10px; /* Space above the quote */
+    text-align: left; /* Align the quote to the left */
+    font-size: 1em; /* Adjust font size */
+}
+/* Form Styling */
+form {
+    background-color: #f3f0e1;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5c0f9e;
+}
+
+
