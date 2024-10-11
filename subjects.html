@@ -5,6 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hogwarts Subjects</title>
     <link rel="stylesheet" href="HogwartsWebsite.css">
+    <style>
+     /* Basic Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+/* Header */
+header {
+    background-color: #3f3f3f; /* Dark background */
+    color: white;
+    padding: 10px; /* Reduced padding */
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px; /* Decreased font size */
+    margin: 5px 0; /* Reduced margin */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px; /* Reduced spacing */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: 20px; /* Adjusted padding */
+}
+
+.subjects {
+    margin: 0 auto;
+    max-width: 800px; /* Limit the width */
+}
+
+h2 {
+    font-size: 20px; /* Decreased font size */
+}
+
+.subjects ul {
+    padding: 0;
+    list-style-type: none; /* No bullets */
+}
+
+.subjects ul li {
+    font-size: 16px; /* Decreased font size */
+    cursor: pointer; /* Pointer cursor for clickable items */
+    margin: 5px 0; /* Reduced spacing between subjects */
+}
+
+.subject-details {
+    border: 1px solid #ccc; /* Border for better visibility */
+    padding: 10px; /* Adjusted padding */
+    margin-top: 15px; /* Reduced margin above */
+}
+
+/* Footer */
+footer {
+    background-color: #3f3f3f; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 10px; /* Reduced padding */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optional: Additional styles for visual interest */
+.subjects ul li:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -23,25 +107,23 @@
         <section class="subjects">
             <h2>Our Courses</h2>
             <ul>
-                <li>Charms</li>
-                <li>Herbology</li>
-                <li>Defense Against the Dark Arts</li>
-                <li>Care of Magical Creatures</li>
-                <li>Divination</li>
-                <li>Ancient Runes</li>
-                <li>Transfiguration</li>
-                <li>Potions</li>
-                <li>Arithmancy</li>
-                <li>Study of Ancient Magic</li>
-                <li>Magical Theory</li>
-                <li>Flying Lessons</li>
-                <li>Magical Creatures Management</li>
-                <!-- Add more subjects with placeholders -->
+                <li data-details="Learn how to charm objects and people. Master spells like 'Wingardium Leviosa'!">Charms</li>
+                <li data-details="Explore magical plants and their uses in potions and healing.">Herbology</li>
+                <li data-details="Defend yourself against the dark arts and learn counter-curses.">Defense Against the Dark Arts</li>
+                <li data-details="Study magical creatures from nifflers to hippogriffs, and learn to care for them.">Care of Magical Creatures</li>
+                <li data-details="Predict the future and interpret omens with this mystical subject.">Divination</li>
+                <li data-details="Decode ancient magical texts and symbols to unlock their powers.">Ancient Runes</li>
+                <li data-details="Transform objects into something new through Transfiguration.">Transfiguration</li>
+                <li data-details="Brew complex potions with magical properties.">Potions</li>
+                <li data-details="Study magical numbers and their influence on spells.">Arithmancy</li>
+                <li data-details="Uncover secrets of ancient, powerful magic long forgotten.">Study of Ancient Magic</li>
+                <li data-details="Understand the fundamental theories behind all magic.">Magical Theory</li>
+                <li data-details="Learn how to fly a broomstick and master the skies.">Flying Lessons</li>
+                <li data-details="Advanced study of magical creatures management.">Magical Creatures Management</li>
             </ul>
             <div class="subject-details">
                 <h3>Subject Details</h3>
                 <p>Select a subject to learn more!</p>
-                <!-- Placeholder for additional details -->
             </div>
         </section>
     </main>

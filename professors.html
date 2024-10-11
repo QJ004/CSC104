@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hogwarts Professors</title>
     <link rel="stylesheet" href="HogwartsWebsite.css">
-    <link rel="stylesheet" href="css/fullcalendar.min.css"> <!-- Link to FullCalendar CSS -->
-    <script src="js/jquery-3.6.0.min.js"></script> <!-- Link to jQuery -->
-    <script src="js/fullcalendar.min.js"></script> <!-- Link to FullCalendar JS -->
+    <style>
+    .professor-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 20px; /* Space between cards */
+        justify-content: center; /* Center the grid horizontally */
+        align-items: center; /* Center the cards vertically */
+        max-width: 600px; /* Limit the total width of the grid */
+        margin: 0 auto; /* Center the grid container */
+        padding: 20px;
+    }
+
+    .professor-card {
+        text-align: center; /* Center the text in the card */
+        background-color: #3b3b3b; /* Dark background */
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+        width: 250px; /* Card width */
+    }
+
+    .signup-form {
+        display: none; /* Initially hidden */
+        margin-top: 10px;
+        text-align: left;
+    }
+    
+    </style>
 </head>
 <body>
     <header>
@@ -24,21 +49,98 @@
 
     <main>
         <section class="professors">
-            <div class="professor">
-                <h3>Professor McGonagall</h3>
-                <p><strong>Subject:</strong> Transfiguration</p>
-                <p><em>Bio:</em> Professor McGonagall is a highly skilled witch and the head of Gryffindor House.</p>
-                <button class="sign-up">Sign Up</button>
-            </div>
+            <div class="professor-grid">
+                <div class="professor-card">
+                    <h3>Professor McGonagall</h3>
+                    <img src="Hogwarts final project images/Minerva_McGonagall2.gif" alt="Professor McConagall" />
+                    <p><strong>Subject:</strong> Transfiguration</p>
+                    <p><em>Bio:</em> Professor McGonagall is the head of Gryffindor House and an expert in Transfiguration.</p>
+                    <button class="sign-up">Sign Up</button>
+                    <form class="signup-form">
+                        <label for="date">Choose a date:</label>
+                        <input type="date" id="date" required>
+                        <label for="time">Choose a time:</label>
+                        <input type="time" id="time" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
 
-            <div class="professor">
-                <h3>Professor Snape</h3>
-                <p><strong>Subject:</strong> Potions</p>
-                <p><em>Bio:</em> A master of Potions, Professor Snape is known for his strict teaching style.</p>
-                <button class="sign-up">Sign Up</button>
-            </div>
+                <div class="professor-card">
+                    <h3>Professor Snape</h3>
+                    <img src="Hogwarts final project images/Severus_snape2.gif" alt="Professor Snape" />
+                    <p><strong>Subject:</strong> Potions</p>
+                    <p><em>Bio:</em> Known for his strictness, Professor Snape is a master of Potions.</p>
+                    <button class="sign-up">Sign Up</button>
+                    <form class="signup-form">
+                        <label for="date">Choose a date:</label>
+                        <input type="date" id="date" required>
+                        <label for="time">Choose a time:</label>
+                        <input type="time" id="time" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
 
-            <!-- Add more professors here with placeholders -->
+                <!-- Additional professor cards with forms -->
+                <div class="professor-card">
+                    <h3>Professor Sprout</h3>
+                    <img src="Hogwarts final project images/Pomona_Sprout.gif" alt="Professor Sprout" />
+                    <p><strong>Subject:</strong> Herbology</p>
+                    <p><em>Bio:</em> Professor Sprout is the head of Hufflepuff and an expert in magical plants.</p>
+                    <button class="sign-up">Sign Up</button>
+                    <form class="signup-form">
+                        <label for="date">Choose a date:</label>
+                        <input type="date" id="date" required>
+                        <label for="time">Choose a time:</label>
+                        <input type="time" id="time" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="professor-card">
+                    <h3>Professor Flitwick</h3>
+                    <img src="Hogwarts final project images/Filius_Flitwick.gif" alt="Professor Flitwick" />
+                    <p><strong>Subject:</strong> Charms</p>
+                    <p><em>Bio:</em> Small in stature but great in magic, Professor Flitwick is an expert in charms.</p>
+                    <button class="sign-up">Sign Up</button>
+                    <form class="signup-form">
+                        <label for="date">Choose a date:</label>
+                        <input type="date" id="date" required>
+                        <label for="time">Choose a time:</label>
+                        <input type="time" id="time" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="professor-card">
+                    <h3>Professor Lupin</h3>
+                    <img src="Hogwarts final project images/Remus_Lupin.gif" alt="Professor Lupin" />
+                    <p><strong>Subject:</strong> Defense Against the Dark Arts</p>
+                    <p><em>Bio:</em> Professor Lupin is known for his kindness and skill in defending against dark creatures.</p>
+                    <button class="sign-up">Sign Up</button>
+                    <form class="signup-form">
+                        <label for="date">Choose a date:</label>
+                        <input type="date" id="date" required>
+                        <label for="time">Choose a time:</label>
+                        <input type="time" id="time" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="professor-card">
+                    <h3>Professor Hagrid</h3>
+                    <img src="Hogwarts final project images/Rubeus_Hagrid.gif" alt="Professor Hagrid" />
+                    <p><strong>Subject:</strong> Care of Magical Creatures</p>
+                    <p><em>Bio:</em> A half-giant and Keeper of Keys and Grounds at Hogwarts, Professor Hagrid has a deep love for magical creatures.</p>
+                    <button class="sign-up">Sign Up</button>
+                    <form class="signup-form">
+                        <label for="date">Choose a date:</label>
+                        <input type="date" id="date" required>
+                        <label for="time">Choose a time:</label>
+                        <input type="time" id="time" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -46,13 +148,7 @@
         <p>&copy; 2024 Hogwarts School of Witchcraft and Wizardry</p>
     </footer>
 
-    <!-- The calendar modal -->
-    <div id="calendarModal" style="display: none;">
-        <div id="calendar"></div>
-        <button id="submit-date">Submit Date</button>
-        <button id="close-modal">Close</button>
-    </div>
-
     <script src="hogwartsscripts.js"></script>
 </body>
 </html>
+
